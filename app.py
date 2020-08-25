@@ -21,7 +21,7 @@ application = Flask(__name__)
 
 #загружаем модели из файла
 vec = pickle.load(open("./tfidf.pickle", "rb"))
-model = lgb.Booster(model_file='./new_model.txt')
+model = keras.models.load_model('new_model.txt')
 
 
 # тестовый вывод
