@@ -4,7 +4,9 @@ import numpy as np
 import pandas as pd
 import pickle
 
-from tensorflow import keras
+import tensorflow as tf
+tf.compat.v1.enable_eager_execution()
+import keras
 
 
 
