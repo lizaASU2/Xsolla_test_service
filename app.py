@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 import pandas as pd
 import pickle
-import keras
+#import keras
 
 
 
@@ -22,7 +22,8 @@ application = Flask(__name__)
 
 #загружаем модели из файла
 vec = pickle.load(open("./tfidf.pickle", "rb"))
-model = keras.models.load_model('new_model.txt')
+#model = keras.models.load_model('new_model.txt')
+model = models.load_model('new_model.txt')
 
 
 # тестовый вывод
