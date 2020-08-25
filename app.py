@@ -23,7 +23,7 @@ application = Flask(__name__)
 
 #загружаем модели из файла
 vec = pickle.load(open("./tfidf.pickle", "rb"))
-model = keras.models.load_model('./new_model.txt')
+model = keras.models.load_model('my_model.h5')
 
 
 
